@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRAdies="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pack_name"
+            android:textColor="#191616"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            card_view:text="a" />
+
+        <TextView
+            android:id="@+id/textViewType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="type"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/buttonDetails1"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Détails"
+                android:textColor="#FB8704"
+                app:icon="@drawable/add"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                app:iconTint="#FB8704"
+                android:layout_marginTop="6dp"
+                app:strokeColor="#FB8704"
+                app:strokeWidth="2dp"
+                app:cornerRadius="20dp"
+                />
+
+            <Button
+                android:id="@+id/buttonPanier"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Retirer du panier"
+                android:textColor="#D50000"
+                android:textStyle="bold"
+                app:icon="@drawable/panier"
+                app:iconGravity="textStart"
+                app:iconTint="#D50000"
+                android:layout_marginTop="6dp"
+                app:strokeColor="#D50000"
+                app:strokeWidth="2dp"
+                app:cornerRadius="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
